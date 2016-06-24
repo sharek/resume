@@ -1,0 +1,293 @@
+% resume.tex
+% Zachariah Sharek
+% Based on a resume found at www.toofishes.net/blog/latex-resume-follow-up/
+
+\documentclass[12pt,letterpaper,oneside]{article}
+\usepackage[letterpaper,left=0.75in,right=0.85in,top=0.75in,bottom=0.5in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{tgpagella}
+%\usepackage[minionint,mathlf]{MinionPro}
+\usepackage{enumitem}
+\usepackage{xspace}
+\setlist[itemize]{leftmargin=6mm}
+\setdescription{leftmargin=0pt}
+
+% These next lines will set the resume in a nice sans-serif font (but without non-lining numbers, unfortunately)
+%\renewcommand{\sfdefault}{Myriad-LF}
+%\renewcommand{\familydefault}{\sfdefault}
+
+% to make ligatures searchable
+% the file glyphtounicode.tex can be in the same directory 
+% as the main tex file or in the local latex file directory
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+%\hyphenpenalty=10000
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{-0.5#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+	#1 &
+	#2 \\
+\end{tabular*}}
+
+% and the actual content starts here
+\begin{document}
+
+\begin{center}
+{\LARGE \textbf{\textsc{Danielle E. Sharek}}}
+\vspace{4mm}
+
+\headerrow
+	{3322 Lake Ridge Dr\ \ \textbullet \ \ Murrysville, PA 15668}
+	{dsharek2424@gmail.com\ \ \textbullet \ \ (412) 559\textendash 8747}	
+\end{center}
+\vspace{-2mm}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{\centering\textsc{Employment}}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item 
+	\headerrow
+		{\textbf{Weinstein Imaging}}
+		{\textbf{Pittsburgh, PA}}
+	\\
+	\headerrow
+		{\emph{Staff Radiologist}}
+		{\emph{11/2015\textendash present}}
+	\vspace{-6mm}
+	\begin{itemize*}
+		\item Specializes in women's imaging \& procedures
+	\end{itemize*}
+
+	\item 
+	\headerrow
+		{\textbf{Radiologic Consultants Ltd}}
+		{\textbf{Greensburg, PA}}
+	\\
+	\headerrow
+		{\emph{Staff Radiologist}}
+		{\emph{7/2014\textendash 10/2015}}
+	\vspace{-6mm}
+	\begin{itemize*}
+		\item Interprets all radiologic modalities; specializes in women's imaging \& procedures
+	\end{itemize*}
+\end{itemize}
+	\vspace{3mm}
+\hrule
+\vspace{-0.4em}
+\subsection*{\centering\textsc{Education \& Training}}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item 
+	\headerrow
+		{\textbf{Magee Women's Hospital of University of Pittsburgh Medical Center}}
+		{\textbf{Pittsburgh, PA}}
+	\\
+	\headerrow
+		{\emph{Fellowship, Women's Imaging}}
+		{\emph{7/2013\textendash 6/2014}}
+	\vspace{-6mm}
+\end{itemize}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item 
+	\headerrow
+		{\textbf{University of Pittsburgh Medical Center}}
+		{\textbf{Pittsburgh, PA}}
+	\\
+	\headerrow
+		{\emph{Residency, Radiology}}
+		{\emph{7/2009\textendash 6/2013}}
+	\headerrow
+		{\emph{Internship}}
+		{\emph{6/2008\textendash 6/2009}}
+	\vspace{-6mm}
+\end{itemize}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item 
+	\headerrow
+		{\textbf{New York Medical College}}
+		{\textbf{Valhalla, NY}}
+	\\
+	\headerrow
+		{\emph{MD, Medicine}}
+		{\emph{8/2004\textendash 5/2008}}
+	\vspace{-6mm}
+\end{itemize}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item 
+	\headerrow
+		{\textbf{Carnegie Mellon University}}
+		{\textbf{Pittsburgh, PA}}
+	\\
+	\headerrow
+		{\emph{BS, Biological Sciences}}
+		{\emph{8/2000\textendash 5/2004}}
+	\vspace{-6mm}
+\end{itemize}
+	\vspace{3mm}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{\centering\textsc{Publications}}
+\vspace{-0.4em}
+{\hfill \scriptsize * Last name changed from Hooper to Sharek in 2012}
+\vspace{-0.4em}
+\begin{itemize}
+	\parskip=0.1em
+	\item \textbf{Sharek D}, Zuley ML, Zhang Y, Ganott M, Ahrendt G, McGuire K, Soran A, ``Radioactive Seed Localization versus Wire Localization for Lumpectomies: A Comparison of Outcomes''  \emph{American Journal of Roentgenology.} 2015 Apr; 204(4): 872-7.
+\end{itemize}
+
+\begin{itemize}
+	\parskip=0.1em
+	\item Zuley ML, Zhang Y, Bandos A, \textbf{Sharek D}, Ganott M, Gur D ``Diagnostic Accuracy of Tomosynthesis vs Mammographic Supplemental Views: Impact of Lesion Shape Perception'' \emph{Manuscript under review}
+\end{itemize}
+
+\vspace{-0.4em}
+\subsection*{\centering\textsc{Conference Presentations \& Publications}}
+
+\begin{itemize}
+\parskip=0.1em
+\item \textbf{Sharek D}, Zuley ML, Zhang Y, Ganott, M, Ahrendt G, McGuire K, Soran A ``Radioactive Seed Localization versus Wire Localization for Segmental Mastectomies: A Comparison of Surgical 
+Outcomes'' \emph{American Roentgen Ray Society}, Washington DC (May 2013). 
+
+\item Zuley ML, Zhang Y, Bandos A, \textbf{Hooper D}, Ganott M, Gur D ``Diagnostic Accuracy of Tomosynthesis vs Mammographic Supplemental Views: Impact of Lesion Shape Perception'' \emph{Radiological Society of North America}, Chicago, IL (Dec. 2012).
+\end{itemize}
+\pagebreak
+\begin{center}
+{\LARGE \textbf{\textsc{Danielle E. Sharek}}}
+\end{center}
+\vspace{-0.4em}
+\hrule
+\vspace{-0.4em}
+\subsection*{\centering\textsc{Professional Certifications \& Memberships}}
+
+\begin{indentsection}{6mm}
+\begin{description*}
+	\item[Specialty Board Certification:] American Board of Radiology, June 2013
+	\vspace{1mm}
+	\item[Medical Licensure:]Pennsylvania Medical License, June 2013
+	\vspace{1mm}
+	\item[Professional Memberships:] Radiologic Society of North America (RSNA), \\
+	\phantom{[Professional Memberships:]\xspace}American Roentgen Ray Society (ARRS),\\ 
+	\phantom{[Professional Memberships:]\xspace}Society for the Advancement of Women's Imaging (SAWI),\\ 
+	\phantom{[Professional Memberships:]\xspace}Society of Breast Imaging (SBI)
+\end{description*}
+\end{indentsection}
+
+\hrule
+\vspace{-0.4em}
+
+\subsection*{\centering\textsc{Teaching}}
+
+\begin{itemize}
+	\parskip=0.1em
+	\item 
+	\headerrow
+		{\textbf{University of Pittsburgh Diagnostic Radiology}}
+		{\textbf{Pittsburgh, PA}}
+	\\
+	\headerrow
+		{\emph{Physician Assistant Instructor}}
+		{\emph{1/2011\textendash 9/2011}}
+	\vspace{-6mm}
+	\begin{itemize*}
+		\item Trained Physician Assistant students in the basics of abdominal and pelvic radiology
+	\end{itemize*}
+	\headerrow
+		{\emph{Medical Resident Lecturer}}
+		{\emph{5/2010 \& 5/2011}}
+	\vspace{-6mm}
+	\begin{itemize*}
+		\item Presented annual lecture to the UPMC radiology residents regarding diagnostic breast imaging including the use of US, MRI and mammography
+	\end{itemize*}
+
+	\parskip=0.1em
+	\item 
+	\headerrow
+		{\textbf{New York Medical College}}
+		{\textbf{Valhalla, NY}}
+	\\
+	\headerrow
+		{\emph{Biochemistry Tutor}}
+		{\emph{5/2006\textendash 5/2008}}
+	\vspace{-6mm}
+	\begin{itemize*}
+		\item Tutored and taught medical students biochemistry 
+	\end{itemize*}
+
+	\parskip=0.1em
+	\item 
+	\headerrow
+		{\textbf{Academic Development Office, Carnegie Mellon University}}
+		{\textbf{Pittsburgh, PA}}
+	\\
+	\headerrow
+		{\emph{Supplemental Biology Instruction Leader}}
+		{\emph{1/2001\textendash 5/2004}}
+	\vspace{-6mm}
+	\begin{itemize*}
+		\item Conducted interactive weekly review sessions 
+		\item Prepared handouts, learning aids, and informal quizzes for SI sessions
+		\item Trained in peer instruction, study skills, test-taking, and other study strategies
+	\end{itemize*}
+	\headerrow
+		{\emph{Peer Tutor}}
+		{\emph{1/2000 \& 5/2004}}
+	\vspace{-6mm}
+	\begin{itemize*}
+		\item Provided tutoring sessions on both a walk-in and individual basis
+	\end{itemize*}
+
+	\headerrow
+		{\textbf{East End Tutoring Program}}
+		{\textbf{Pittsburgh, PA}}
+	\\
+	\headerrow
+		{\emph{Mathematics \& Biology Tutor}}
+		{\emph{1/2000\textendash 5/2004}}
+	\vspace{-6mm}
+	\begin{itemize*}
+		\item Tutored inner-city children in grades 5-12
+	\end{itemize*}
+\end{itemize}
+
+
+\end{document}

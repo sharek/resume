@@ -1,0 +1,213 @@
+% resume.tex
+% Zachariah Sharek
+% Based on a resume found at www.toofishes.net/blog/latex-resume-follow-up/
+
+\documentclass[12pt,letterpaper,oneside]{article}
+\usepackage[letterpaper,left=0.75in,right=0.85in,top=0.75in,bottom=0.5in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+%\usepackage{tgpagella}
+\usepackage[minionint,mathlf]{MinionPro}
+\usepackage{enumitem}
+\usepackage{xspace}
+\setlist[itemize]{leftmargin=6mm}
+\setdescription{leftmargin=0pt}
+
+% These next lines will set the resume in a nice sans-serif font (but without non-lining numbers, unfortunately)
+%\renewcommand{\sfdefault}{Myriad-LF}
+%\renewcommand{\familydefault}{\sfdefault}
+
+% to make ligatures searchable
+% the file glyphtounicode.tex can be in the same directory 
+% as the main tex file or in the local latex file directory
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+%\hyphenpenalty=10000
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{-0.5#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+	#1 &
+	#2 \\
+\end{tabular*}}
+
+% and the actual content starts here
+\begin{document}
+
+\begin{center}
+{\LARGE \textbf{\textsc{Danielle E. Sharek}}}
+\vspace{4mm}
+
+\headerrow
+	{134 S Fairmount St\ \ \textbullet \ \ Pittsburgh, PA 15206}
+	{danielle2424@gmail.com\ \ \textbullet \ \ (412) 559\textendash 8747}	
+\end{center}
+\vspace{-2mm}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{\centering\textsc{Education}}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item 
+	\headerrow
+		{\textbf{Magee Women's Hospital of University of Pittsburgh Medical Center}}
+		{\textbf{Pittsburgh, PA}}
+	\\
+	\headerrow
+		{\emph{Fellowship, Women's Imaging}}
+		{\emph{7/2013\textendash 6/2014}}
+	\vspace{-6mm}		
+	\begin{itemize*}
+		\item I like pie
+	\end{itemize*}
+\end{itemize}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item 
+	\headerrow
+		{\textbf{University of Pittsburgh Medical Center}}
+		{\textbf{Pittsburgh, PA}}
+	\\
+	\headerrow
+		{\emph{Residency, Radiology}}
+		{\emph{7/2009\textendash 6/2013}}
+	\headerrow
+		{\emph{Internship}}
+		{\emph{6/2008\textendash 6/2009}}
+	\vspace{-6mm}		
+	\begin{itemize*}
+		\item I love Zach
+	\end{itemize*}
+\end{itemize}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item 
+	\headerrow
+		{\textbf{New York Medical College}}
+		{\textbf{Valhalla, NY}}
+	\\
+	\headerrow
+		{\emph{MD, Medicine}}
+		{\emph{8/2004\textendash 5/2008}}
+	\vspace{-6mm}		
+	\begin{itemize*}
+		\item I love Zach
+	\end{itemize*}
+\end{itemize}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item 
+	\headerrow
+		{\textbf{Carnegie Mellon University}}
+		{\textbf{Pittsburgh, PA}}
+	\\
+	\headerrow
+		{\emph{BS, Biological Sciences}}
+		{\emph{8/2000\textendash 5/2004}}
+	\vspace{-6mm}		
+	\begin{itemize*}
+		\item I love Zach
+	\end{itemize*}
+\end{itemize}
+
+
+\hrule
+\vspace{-0.4em}
+\subsection*{\centering\textsc{Experience}}
+\begin{itemize}
+	\parskip=0.1em
+
+	\item
+	\headerrow
+		{\textbf{Harvard Business School}}
+		{\textbf{Boston, MA}}
+	\\
+	\headerrow
+		{\emph{Research Associate}}
+		{\emph{1/2006\textendash 7/2006}}
+		\vspace{-6.5mm}
+	\begin{itemize*}
+		%\item Managing and developing economic experiments investigating behavioral game theory 
+		\item Created models of economic behavior from statistical analysis of multi-terabyte datasets
+		\item Managed experimental economic lab; Developed and administered over 20 experiments		  		 
+	\end{itemize*}
+
+	\item
+	\headerrow
+		{\textbf{Accenture}}
+		{\textbf{Charlotte, NC}}
+	\\
+	\headerrow
+		{\emph{Consultant}}
+		{\emph{8/2003\textendash 7/2005}}
+		\vspace{-6.5mm}
+	\begin{itemize*}
+		\item Led an international team of 15 programmers in successfully stress-testing an online-banking website with over \$300 billion of deposits 
+		\item Designed and implemented mortgage securitization and re-underwriting software that processed \$10 billion of mortgages daily for a financial startup 
+		%\item Created and managed a new product enabling secure transactions of mortgage-based securities
+	\end{itemize*}
+
+	\item
+	\headerrow
+		{\textbf{Rh\^one Poulenc/Aventis}}
+		{\textbf{Research Triangle Park, NC}}
+	\\	
+	\headerrow
+		{\emph{Project Management Consultant \& Environmental Engineer}}
+		{\emph{7/1996\textendash 8/2000}}
+		\vspace{-6.5mm}
+	\begin{itemize*}
+		\item Initially hired as a summer intern during college; Based on outstanding performance, hired full time while attending UNC; Promoted twice pre-graduation
+		\item Managed the implementation of project management processes for a 300-person life sciences department; Resulted in a 25\% decrease in the time required to analyze environmental samples
+		%\item Designed soil sampling techniques accurate enough to enable detection of chemicals down to parts per trillion 
+		\item Created and managed the IT infrastructure to remotely analyze groundwater monitoring data from research sites across the nation; Collected 10 million records over 2 years of operation	
+	\end{itemize*}
+
+\end{itemize}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{\centering\textsc{Additional Information}}
+
+\begin{indentsection}{6mm}
+\begin{description*}
+	\item[Software Skills:] R, SPSS, SAS, SQL, Excel, \LaTeX, Actionscript, Flex, Python
+	\item[Affliations:]	Former Director of the Association for the Coral Environment (ACE), \\
+	\phantom{\textbf{Affliations:\xspace\xspace}} Bahamas Reef Environment Education Fund (BREEF)
+	
+	\item[Interests:] Rugby, kettlebell lifting, mountain biking, designing \& playing board games
+\end{description*}
+\end{indentsection}
+
+\end{document}

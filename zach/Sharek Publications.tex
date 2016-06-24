@@ -1,0 +1,129 @@
+% resume.tex
+% Zachariah Sharek
+% Based on a resume found at www.toofishes.net/blog/latex-resume-follow-up/
+
+\documentclass[12pt,letterpaper,oneside]{article}
+\usepackage[letterpaper,left=0.75in,right=0.85in,top=0.75in,bottom=0.5in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{mathpazo}
+\usepackage{tgpagella}
+\usepackage{enumitem}
+\usepackage{xspace}
+\setlist[itemize]{leftmargin=6mm}
+\setdescription{leftmargin=0pt}
+
+% These next lines will set the resume in a nice sans-serif font (but without non-lining numbers, unfortunately)
+%\renewcommand{\sfdefault}{Myriad-LF}
+%\renewcommand{\familydefault}{\sfdefault}
+
+% to make ligatures searchable
+% the file glyphtounicode.tex can be in the same directory 
+% as the main tex file or in the local latex file directory
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+%\hyphenpenalty=10000
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{-0.5#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+	#1 &
+	#2 \\
+\end{tabular*}}
+
+% and the actual content starts here
+\begin{document}
+
+\begin{center}
+{\LARGE \textbf{\textsc{Zachariah S. Sharek}}}
+\vspace{4mm}
+
+%\headerrow
+%	{134 S Fairmount St\ \ \textbullet \ \ Pittsburgh, PA 15206}
+%	{sharek@gmail.com\ \ \textbullet \ \ (919) 757\textendash 4569}	
+\end{center}
+\vspace{-2mm}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{\centering\textbf{Publications}}
+
+\begin{itemize}
+	\parskip=0.1em
+	\item Swift, S. A., Moore, D. A., Sharek, Z. S., \& Gino, F. (2013). 
+	Inflated applicants: Attribution errors in performance evaluation by professionals. 
+	\emph{PLoS One}, 8(7), e69258.
+\end{itemize}
+
+\begin{itemize}
+	\parskip=0.1em
+	\item Sharek, Z. S., Schoen, R. E. \& Loewenstein, G. (2012). Bias in the Evaluation of Conflict of Interest Policies.  
+	\emph{Journal of Law, Medicine \& Ethics}, 40(2), 368-382.
+\end{itemize}
+
+\begin{itemize}
+	\parskip=0.1em
+	\item Gino, F., Sharek, Z. S., Moore, D. A. (2011).  Keeping the illusion of control under control: Ceilings, floors, and imperfect calibration.  \emph{Organizational Behavior and Human Decision Processes}, 114(2), 104-114.   
+\end{itemize}
+
+\begin{itemize}
+	\parskip=0.1em
+	\item Moore, D. A., Swift, S. A., Sharek, Z. S., \& Gino, F. (2010). Correspondence bias in performance evaluation: Why grade inflation works. \emph{Personality and Social Psychology Bulletin}, 36(6), 843-852.
+\end{itemize}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{\centering\textbf{Publications under Review or Preparation}}
+
+\begin{itemize}
+	\parskip=0.1em
+	\item Swift, S. A., Sharek, Z. S., Gino, F., \& Moore, D. A. On the Robustness and Generality of the
+	Correspondence Bias. Under review at \emph{Journal of Consumer Research}.	
+\end{itemize}
+
+\begin{itemize}
+	\parskip=0.1em
+	\item Sharek, Z. S. \& Moore, D. A. The Illusion of the Illusion of Control. 
+	In preparation for submission to \emph{Psychological Review}. This is adapted from my dissertation.	
+\end{itemize}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{\centering\textbf{Conference Presentations \& Proceedings}}
+
+\begin{itemize}
+\parskip=0.1em
+\item Sharek, Z. S., Swift, S. A., Moore, D. A., \& Gino, F. (2010, June) On the robustness and generality of the correspondence bias. Behavioral Decision Research in Management, Pittsburgh, PA. 
+\item Swift, S. A., Sharek, Z. S., Moore, D. A., \& Gino, F. (2010, June) Seeing through performance: Attribution errors in performance evaluation by experts. Behavioral Decision Research in Management, Pittsburgh, PA.
+\item Sharek, Z. S., Swift, S. A., Gino, F., \& Moore, D. A. (2009, October). On the robustness and generality of the correspondence bias. Association for Consumer Research, Pittsburgh, PA.
+\item Moore, D. A., Swift, S. A., Sharek, Z. S., \& Gino, F. (2008, November). Correspondence bias in 
+performance evaluation and the benefits of having been graded leniently. Society of Judgment and Decision Making Conference, Chicago, Illinois.   
+\item Gino, F., Sharek, Z. S., \& Moore, D. A. (2008, October).  The illusion of the illusion of control.  
+Association for Consumer Research, San Francisco, California.   
+\item Sharek, Z. S., Moore, D. A., Swift, S. A., \& Gino, F. (2008, August). Reducing, enhancing and eliminating the correspondence bias. Academy of Management, Anaheim, California.
+\item Sharek, Z. S., Moore, D. A., Swift, S. A., \& Gino, F., (2007, August).  Correspondence bias in 
+performance evaluation.  Academy of Management, Philadelphia, Pennsylvania.  
+\end{itemize}
+\end{document}
