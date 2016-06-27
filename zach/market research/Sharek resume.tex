@@ -1,0 +1,273 @@
+% resume.tex
+% Zachariah Sharek
+% Based on a resume found at www.toofishes.net/blog/latex-resume-follow-up/
+
+\documentclass[12pt,letterpaper,oneside]{article}
+\usepackage[letterpaper,left=0.75in,right=0.85in,top=0.5in,bottom=0.5in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{mathpazo}
+\usepackage{tgpagella}
+\usepackage{enumitem}
+\usepackage{xspace}
+\usepackage{hyphenat}
+\usepackage[parfill]{parskip}
+\setlist[itemize]{leftmargin=6mm}
+\setdescription{leftmargin=0pt}
+
+% These next lines will set the resume in a nice sans-serif font (but without non-lining numbers, unfortunately)
+%\renewcommand{\sfdefault}{Myriad-LF}
+%\renewcommand{\familydefault}{\sfdefault}
+
+% to make ligatures searchable
+% the file glyphtounicode.tex can be in the same directory 
+% as the main tex file or in the local latex file directory
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+%\hyphenpenalty=10000
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{-0.5#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+	#1 &
+	#2 \\
+\end{tabular*}}
+
+% and the actual content starts here
+\begin{document}
+
+\begin{center}
+{\LARGE \textbf{\textsc{Zachariah Sharek}}}
+\vspace{0.1em}
+
+%\headerrow
+	%{134 S Fairmount St\ \ \textbullet \ \ Pittsburgh, PA 15206}
+	{sharek@gmail.com\ \ \textbullet \ \ (919) 757\textendash 4569}	
+\end{center}
+\vspace{0.5em}
+
+\hrule
+\vspace{-1em}
+%\subsection*{\centering\textsc{Product Strategist \& Behavioral Data Scientist}}
+\subsection*{}
+
+\vspace{-0.7em}
+Entrepreneurial Carnegie Mellon Tepper Ph.D. that applies market research startup experience and an academic background in management and strategy to lead teams making data driven decisions. Focused on designing solutions by understanding organizational and consumer needs combined with strong data analysis skills.    
+\vspace{1em}
+\hrule
+\vspace{-0.4em}
+\subsection*{\centering\textsc{Experience}}
+\begin{itemize}
+	\parskip=0.5em
+
+	\item
+	\headerrow
+		{\textbf{BBC Worldwide}} 
+		{\textbf{Pittsburgh, PA}}
+	\\
+	\headerrow
+		{\emph{Executive Director of Apturis}}
+		{\emph{2/2016\textendash current}}
+		\vspace{-6.5mm}
+	\begin{itemize*}
+		\item Recruited by senior leadership at the BBC to lead a market research initiative focusing on improving global marketing strategy and decision-making
+		\item Developed multiple data products using novel data sources, enabling real-time global comparison of the BBC's marketing efforts 
+
+	\end{itemize*}
+
+
+	\item
+	\headerrow
+		{\textbf{Rhiza}, \footnotesize{A Draper Triangle funded marketing analytics startup}} 
+		{\textbf{Pittsburgh, PA}}
+	\\
+	\headerrow
+		{\emph{Senior Vice President of Product Strategy}}
+		{\emph{11/2014\textendash 1/2016}}
+		\vspace{-6.5mm}
+	\begin{itemize*}
+		\item Led a team of 18 product managers, developers and data scientists in creating products for data-driven marketing analysis for media ad sales clients; Resulted in 24 new customers and 200\% increase in monthly recurring revenue
+		\item Directed business development of partnerships with top providers of syndicated marketing data, including Nielsen, Rentrak, Experian and Polk
+		\item Consulted with media clients to optimize ad sales revenue and consumer research; Increased success of ad sales pitches by 75\% 
+
+	\end{itemize*}
+
+	\item
+	\headerrow
+		{\textbf{CivicScience}, \footnotesize{A NPD Group funded big data consumer insights startup}}
+		{\textbf{Pittsburgh, PA}}
+	\\
+	\headerrow
+		{\emph{Director of Strategy \& Innovation}}
+		{\emph{3/2013\textendash 10/2014}}
+		\vspace{-6.5mm}
+	\begin{itemize*}
+		\item Led the company's consumer insights consulting team; Tripled consulting revenue within one year
+		\item Developed marketing strategy and ROI analytic models for healthcare clients using over 500 million insurance claims; Increased advertising ROI by over 50\% 
+		\item Created data products identifying persuadable consumers; Resulted in acquiring over 30 consumer goods clients, including General Mills, T-Mobile and Samsung
+ 
+	\end{itemize*}
+
+	\item
+	\headerrow
+		{\textbf{Tepper School of Business, Carnegie Mellon University}}
+		{\textbf{Pittsburgh, PA}}
+	\\
+	\headerrow
+		{\emph{Researcher \& Instructor}}
+		{\emph{7/2006\textendash 5/2012}}
+		\vspace{-6.5mm}
+	\begin{itemize*}
+		\item Research focus on strategy \& management, especially judgment \& decision-making
+		\item Awarded \$223,000 National Science Foundation grant on behavioral biases in decision-making resulting in four papers \& seven conference presentations
+		%\item Produced four papers \& seven conference proceedings on individual \& organizational decision biases
+		\item Instructor for classes on management, decision-making and negotiations with teaching evaluations in top 10\% of university
+	\end{itemize*}
+
+\newpage
+
+\end{itemize}
+
+\begin{center}
+{\LARGE \textbf{\textsc{Zachariah Sharek}}}
+\vspace{4mm}
+\end{center}
+\vspace{-0.4em}
+\hrule
+\vspace{-0.4em}
+\subsection*{\centering\textsc{Experience continued}}
+\begin{itemize}
+
+	\item
+	\headerrow
+		{\textbf{Harvard Business School, Harvard University}}
+		{\textbf{Boston, MA}}
+	\\
+	\headerrow
+		{\emph{Research Associate}}
+		{\emph{1/2006\textendash 7/2006}}
+		\vspace{-6.5mm}
+	\begin{itemize*}
+		\item Created models of media consumption from analysis of multi-terabyte datasets; including the largest ever dataset HBS had used for research
+		\item Designed economic experiments investigating behavioral game theory, the results were used in three academic papers 
+		\item Managed experimental economic lab; Supervised three research assistants; Developed and administered over 25 experiments		  		 
+	\end{itemize*}
+
+
+	\item
+	\headerrow
+		{\textbf{Accenture}}
+		{\textbf{Charlotte, NC}}
+	\\
+	\headerrow
+		{\emph{Consultant}}
+		{\emph{8/2003\textendash 7/2005}}
+		\vspace{-6.5mm}
+	\begin{itemize*}
+		\item Led an international team of 15 programmers \& testers in successfully stress-testing an online-banking website with over \$300 billion of deposits 
+		\item Designed and lead implementation of mortgage securitization and re-underwriting software that processed up to \$10 billion of mortgages daily for a financial startup 
+		\item Created a statistical model determining which mortgages to re-underwrite; Resulted in 33\% increase in mortgage securities processing speed
+
+	\end{itemize*}
+	
+%	\item
+%	\headerrow
+%		{\textbf{Rh\^one Poulenc/Aventis}}
+%		{\textbf{Research Triangle Park, NC}}
+%	\\	
+%	\headerrow
+%		{\emph{Data Analyst \& Environmental Engineer}}
+%		{\emph{7/1996\textendash 8/2000}}
+%		\vspace{-6.5mm}
+%	\begin{itemize*}
+%		\item Initially hired as a summer intern during college; Based on outstanding performance, hired full time while attending university; Promoted twice pre-graduation
+%		\item Managed the implementation of project management processes for a 300-person life sciences department; Resulted in a 25\% decrease in the time required to analyze environmental samples
+%		\item Created and managed the IT infrastructure to remotely analyze groundwater monitoring data from research sites across the nation; Analyzed 100 million records over 2 years of operation; Results were used to successfully gain EPA approval of two \$100 million products	
+%	\end{itemize*}
+
+\end{itemize}
+
+\hrule
+
+\vspace{-0.4em}
+\subsection*{\centering\textsc{Education}}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item 
+	\headerrow
+		{\textbf{Tepper School of Business, Carnegie Mellon University}}
+		{\textbf{Pittsburgh, PA}}
+	\\
+	\headerrow
+		{\emph{Ph.D., Organizational Behavior \& Theory (Strategy \& Management)}}
+		{\emph{8/2006\textendash 5/2012}}
+	\vspace{-6mm}		
+	\begin{itemize*}
+		\item Expertise: strategy, judgment \& decision-making, behavioral economics, negotiations
+	\end{itemize*}
+\end{itemize}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item
+	
+	\headerrow
+		{\textbf{University of North Carolina}}
+		{\textbf{Chapel Hill, NC}}
+	\\
+	\headerrow
+		{\emph{MS, Information Science}}
+		{\emph{8/2000\textendash 12/2002}}
+	\headerrow
+		{\emph{BA, Economics \& Philosophy}}
+		{\emph{8/1996\textendash 12/1999}}
+	\vspace{-6mm}
+	\begin{itemize*}
+		\item Played Division 1 rugby; Selected to North Carolina All-Star team
+		\item Developer on TeraScale Retrieval, a National Science Foundation funded project
+		\item Transfered from Duke University after freshman year
+	\end{itemize*}
+
+\end{itemize}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{\centering\textsc{Additional Information}}
+
+\begin{indentsection}{6mm}
+\begin{description*}
+	\setlength\itemsep{0.3em}
+%	\item[Technical Skills:] R, SPSS, SQL, Excel, \LaTeX
+	\item[Nonprofit Work:]	Director Emeritus of the Association for the Coral Environment, \\
+	%\phantom{\textbf{Affliations:\xspace\xspace}} Advisor to the Executive Director of the Bahamas Reef Environment Education Fund
+	Advisor to the Executive Director of the Bahamas Reef Environment Education Fund (BREEF)
+	\item[Activities:] Statistical analysis for breast cancer research, competitive kettlebell lifting \& instruction, designing \& playing board games
+\end{description*}
+\end{indentsection}
+
+\end{document}
